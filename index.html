@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- responsiveness setting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- attributes with external CSS codes; HTML code requests external CSS files -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>Combustível</title>
+    </head>
+    <body>
+        <div id="centerBox">
+            <div onclick="clearMessages()" title="Clique aqui para limpar" id="question">
+                Qual compensa?
+            </div>
+            <form onsubmit="formHandler(event)">
+                <div id="pricesFuel">
+                    <div id="gasoline">
+                        <label>Preço da gasolina</label>
+                            <input
+                                type="text"
+                                placeholder="Digite o valor da gasolina"
+                                title="Valor da gasolina"
+                                autofocus
+                                required
+                            >
+                    </div>
+
+                    <div id="alcohol">
+                        <label>Preço do etanol</label>
+                            <input
+                                type="text"
+                                placeholder="Digite o valor do etanol"
+                                title="Valor do etanol"
+                                required
+                            >
+                    </div>
+                </div>
+
+                <div id="messages"></div>
+                <button type="submit" title="Enviar valores">Calcular</button>
+            </form>
+        </div>
+        <div id="bellow">Desafio da B7Web: página <strong>"Combustível"</strong>; por Alessandro Taddei.</div>
+        <!-- content in Javascript code; HTML code requests external JS files -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
