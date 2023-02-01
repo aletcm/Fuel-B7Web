@@ -1,4 +1,4 @@
-/* JS code requested by script.html file; Javascript content to HTML code */
+/* JS code requested by index.html file; Javascript content to HTML code */
 
 function formHandler(received) {
     received.preventDefault()
